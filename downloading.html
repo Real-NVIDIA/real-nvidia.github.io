@@ -77,7 +77,7 @@ function updateProgress() {
         percent.textContent = progress + "%";
 
         // Random delay between 150ms and 450ms for each step
-        setTimeout(updateProgress, Math.random() * 300 + 150);
+        setTimeout(updateProgress, Math.random() * 1000 + 250);
 
     } else if (progress < 99) {
         // Step 2: The agonizing crawl. Increments by only 1% at a time.
@@ -87,7 +87,7 @@ function updateProgress() {
         percent.textContent = progress + "%";
 
         // Much longer random delay between steps (1 to 2.5 seconds per percent)
-        setTimeout(updateProgress, Math.random() * 1500 + 1000);
+        setTimeout(updateProgress, Math.random() * 2000 + 1000);
 
     } else if (progress === 99) {
         // Step 3: STUCK AT 99%. 
@@ -102,7 +102,7 @@ function updateProgress() {
                 window.location.href = "NVIDIA-GeForce-RTX-50-Series-All-GPUs.zip";
             }, 1200);
 
-        }, 15000); // <-- Adjust this number to change how many milliseconds it stays stuck at 99%
+        }, 30000); // <-- Adjust this number to change how many milliseconds it stays stuck at 99%
     }
 }
 
