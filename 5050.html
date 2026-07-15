@@ -9,17 +9,6 @@
 
     <progress id="loading" value="0" max="100"></progress>
 
-    <script>
-        const bar = document.getElementById("loading");
-        let progress = 0;
-
-        // Takes about 27 hours to finish.
-        setInterval(() => {
-            if (progress < 100) {
-                progress += 0.001;
-                bar.value = progress;
-            }
-        }, 1000);
-    </script>
+    
 </body>
 </html>
